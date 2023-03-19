@@ -4,15 +4,24 @@ import $ from 'jquery';
 export const CustomerForm = () => {
     // save customer details
     function saveCustomer() {
+        let name = $('#txtName').val();
+        let address = $('#txtAddress').val();
+        let contactNo = $('#txtContactNo').val();
+        let salary = $('#txtSalary').val();
+        console.log("Name : " + name);
+        console.log("Address : " + address);
+        console.log("Contact No : " + contactNo);
+        console.log("Salary : " + salary);
+
         alert("Customer Saved Successfully!");
     }
 
     //clear text fields
     function clearFields() {
-        $('#txtName').val("")
-        $('#txtAddress').val("")
-        $('#txtContactNo').val("")
-        $('#txtSalary').val("")
+        $('#txtName').val("");
+        $('#txtAddress').val("");
+        $('#txtContactNo').val("");
+        $('#txtSalary').val("");
     }
 
     return (
