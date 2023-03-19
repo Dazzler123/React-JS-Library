@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {FullName} from "./component/FullName";
+import {User} from "./component/User";
+import {UserDetails} from "./component/UserDetails";
+import {ShowUser} from "./component/ShowUser";
+import {View} from "./component/View";
+import {Array} from "./component/Array";
+import {EventListener} from "./component/EventListener";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    // const obj = {
+    //     name: "Dasindu",
+    //     address: "Gampaha"
+    // };
+    //
+    return (
+        // <div className="App">
+        //     <h1>HELLO REACT</h1>
+        //     <h1>Hello {obj.name}</h1>
+        // </div>
+
+        // document.getElementById('body').append(`<FullName/><VehicleTypes/>`)
+        <div>
+            <h1>Student Table</h1>
+            {/*<FullName/>*/}
+            {/*<VehicleTypes/>*/}
+            <View/>
+            <br/>
+            <Array/>
+            <EventListener/>
+        </div>
+    )
+
 }
 
 export default App;
