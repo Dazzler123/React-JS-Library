@@ -6,7 +6,7 @@ import {UserDetails} from "./component/UserDetails";
 import {ShowUser} from "./component/ShowUser";
 import {View} from "./component/View";
 import {Array} from "./component/Array";
-import {EventListener} from "./component/EventListener";
+import {CustomerForm} from "./component/CustomerForm";
 
 function App() {
 
@@ -23,13 +23,14 @@ function App() {
 
         // document.getElementById('body').append(`<FullName/><VehicleTypes/>`)
         <div>
-            <h1>Student Table</h1>
+            {/*<h1>Student Table</h1>*/}
             {/*<FullName/>*/}
             {/*<VehicleTypes/>*/}
-            <View/>
-            <br/>
-            <Array/>
-            <EventListener/>
+            {/*<View/>*/}
+            {/*<br/>*/}
+            {/*<Array/>*/}
+            {/*<EventListener/>*/}
+            <CustomerForm/>
         </div>
     )
 
