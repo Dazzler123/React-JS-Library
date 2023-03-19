@@ -1,4 +1,5 @@
 import Bootstrap from 'bootstrap';
+import $ from 'jquery';
 
 export const CustomerForm = () => {
     // save customer details
@@ -8,10 +9,10 @@ export const CustomerForm = () => {
 
     //clear text fields
     function clearFields() {
-        document.getElementById('txtName').value = "";
-        document.getElementById('txtAddress').value = "";
-        document.getElementById('txtContactNo').value = "";
-        document.getElementById('txtSalary').value = "";
+        $('#txtName').val("")
+        $('#txtAddress').val("")
+        $('#txtContactNo').val("")
+        $('#txtSalary').val("")
     }
 
     return (
@@ -46,7 +47,7 @@ export const CustomerForm = () => {
             </div>
 
             <div className="row col-12 mx-auto">
-                <button type="button" className="btn btn-outline-primary me-3 col-5" onClick={saveCustomer}>Save
+                <button type="button" className="btn btn-outline-success me-3 col-5" onClick={saveCustomer}>Save
                     Customer
                 </button>
                 <button type="button" className="btn btn-outline-primary col-5" onClick={clearFields}>Reset</button>

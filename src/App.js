@@ -1,7 +1,5 @@
 // import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
 import {FullName} from "./component/FullName";
 import {User} from "./component/User";
 import {UserDetails} from "./component/UserDetails";
