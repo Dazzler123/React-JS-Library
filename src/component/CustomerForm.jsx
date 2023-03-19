@@ -1,19 +1,56 @@
+import Bootstrap from 'bootstrap';
+
 export const CustomerForm = () => {
+    // save customer details
+    function saveCustomer() {
+        alert("Customer Saved Successfully!");
+    }
+
+    //clear text fields
+    function clearFields() {
+        document.getElementById('txtName').value = "";
+        document.getElementById('txtAddress').value = "";
+        document.getElementById('txtContactNo').value = "";
+        document.getElementById('txtSalary').value = "";
+    }
+
     return (
-        <div>
-            <h1 className="customerForm">Customer Registration Form</h1>
-            <br/>
-            <input id="name" type="text" placeholder="Enter Name"/>
-            <br/>
-            <input id="address" type="text" placeholder="Enter Address"/>
-            <br/>
-            <input id="contactNo" type="text" placeholder="Enter Contact No."/>
-            <br/>
-            <input id="salary" type="text" placeholder="Enter Salary"/>
-            <br/>
-            <br/>
-            <button>Save Details</button>
-            <button>Reset</button>
+        <div className="col-6 container mx-auto">
+            <h1 className="fs-1 mt-5 mb-5 text-center fw-bolder">Customer Registration Form</h1>
+            <div className="input-group mb-3 row col-12 g-4">
+                <label htmlFor="">
+                    Customer Name : <input id="txtName" className="form-control" type="text"
+                                           placeholder="Dasindu Hewagamage"/>
+                </label>
+
+                <br/>
+                <br/>
+                <label htmlFor="">
+                    Customer Address : <input id="txtAddress" className="form-control" type="text"
+                                              placeholder="Wattala"/>
+                </label>
+
+                <br/>
+                <br/>
+                <label htmlFor="">
+                    Customer Contact No. : <input id="txtContactNo" className="form-control" type="text"
+                                                  placeholder="0762093848"/>
+                </label>
+
+                <br/>
+                <br/>
+                <label htmlFor="">
+                    Customer Salary : <input id="txtSalary" className="form-control" type="text"
+                                             placeholder="13000.00"/>
+                </label>
+            </div>
+
+            <div className="row col-12 mx-auto">
+                <button type="button" className="btn btn-outline-primary me-3 col-5" onClick={saveCustomer}>Save
+                    Customer
+                </button>
+                <button type="button" className="btn btn-outline-primary col-5" onClick={clearFields}>Reset</button>
+            </div>
         </div>
     )
 }
