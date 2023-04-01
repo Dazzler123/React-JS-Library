@@ -8,7 +8,7 @@ import {View} from "./component/View";
 import {Array} from "./component/Array";
 import {AddMinusView} from "./component/AddMinusView";
 import {EffectHookTask} from "./component/EffectHookTask";
-import {Forms} from "./component/Forms";
+import {Routing} from "./component/Routing";
 
 function App() {
 
@@ -34,7 +34,8 @@ function App() {
             {/*<EventListener/>*/}
             {/*<AddMinusView/>*/}
             {/*<EffectHookTask/>*/}
-            <Forms/>
+            {/*<Forms/>*/}
+            <Routing/>
         </div>
     )
 
