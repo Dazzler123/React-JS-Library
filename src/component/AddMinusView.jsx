@@ -1,18 +1,24 @@
+import {useState} from "react";
+
 export const AddMinusView = () => {
+
+    const [newvalue,setNewValue]= useState(0);
 
     let count = 0;
 
     const handleonclickadd = () => {
-        count++;
+        setNewValue(newvalue + 1);
+        // count++;
     }
 
     const handleonclickminus = () => {
-        count--;
+        setNewValue(newvalue - 1);
+        // count--;
     }
 
     return (
         <div className="overflow-hidden mt-5">
-            <h1 className="fw-bolder text-center fs-1 font-monospace mt-5">{count}</h1>
+            <h1 className="fw-bolder text-center fs-1 font-monospace mt-5">{newvalue}</h1>
             <br/>
             <br/>
             <br/>
