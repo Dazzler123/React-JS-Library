@@ -5,9 +5,9 @@ export const AddMinusView = () => {
             <br/>
             <br/>
             <br/>
-            <div className="col-10 row m-0 mx-auto">
-                <button className="btn btn-lg btn-primary col-4 me-3">+</button>
-                <button className="btn btn-lg btn-secondary col-4">-</button>
+            <div className="col row d-flex justify-content-center">
+                <button className="btn btn-lg btn-primary col-2 me-3">+</button>
+                <button className="btn btn-lg btn-secondary col-2">-</button>
             </div>
         </div>
     )
