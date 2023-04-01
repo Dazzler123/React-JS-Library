@@ -1,13 +1,24 @@
 export const AddMinusView = () => {
+
+    let count = 0;
+
+    const handleonclickadd = () => {
+        count++;
+    }
+
+    const handleonclickminus = () => {
+        count--;
+    }
+
     return (
-        <div className="overflow-hidden">
-            <h1 className="fw-bolder text-center fs-1 font-monospace mt-5">0</h1>
+        <div className="overflow-hidden mt-5">
+            <h1 className="fw-bolder text-center fs-1 font-monospace mt-5">{count}</h1>
             <br/>
             <br/>
             <br/>
             <div className="col row d-flex justify-content-center">
-                <button className="btn btn-lg btn-primary col-2 me-3">+</button>
-                <button className="btn btn-lg btn-secondary col-2">-</button>
+                <button onClick={handleonclickadd} className="btn btn-lg btn-primary col-2 me-3">+</button>
+                <button onClick={handleonclickminus} className="btn btn-lg btn-secondary col-2">-</button>
             </div>
         </div>
     )
