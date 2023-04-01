@@ -6,7 +6,7 @@ import {UserDetails} from "./component/UserDetails";
 import {ShowUser} from "./component/ShowUser";
 import {View} from "./component/View";
 import {Array} from "./component/Array";
-import {CustomerForm} from "./component/CustomerForm";
+import {AddMinusView} from "./component/AddMinusView";
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
             {/*<br/>*/}
             {/*<Array/>*/}
             {/*<EventListener/>*/}
-            <CustomerForm/>
+            <AddMinusView/>
         </div>
     )
 
