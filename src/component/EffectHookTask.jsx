@@ -5,23 +5,24 @@ export const EffectHookTask = () => {
     const [value,setValue] = useState();
 
     const handleonclickpost = () => {
-
+        setValue("Your Posts");
     }
 
     const handleonclickcomment = () => {
-
+        setValue("Your Comments");
     }
 
     const handleonclickphotos = () => {
-
+        setValue("Your Photos");
     }
 
     const handleonclicknews = () => {
-
+        setValue("Your News");
     }
 
     return (
         <div>
+            <h1 className="mt-5 text-center fs-1 fw-bolder">{value}</h1>
             <div className="d-flex btn-group col-6 justify-content-center mt-5 gap-5 mx-auto row" role="group"
                  aria-label="Default button group">
                 <button onClick={handleonclickpost} type="button" className="btn btn-primary col-2">Post</button>
