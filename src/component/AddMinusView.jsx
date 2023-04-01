@@ -1,6 +1,6 @@
 export const AddMinusView = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <h1 className="fw-bolder text-center fs-1 font-monospace mt-5">0</h1>
             <br/>
             <br/>
