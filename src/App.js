@@ -7,6 +7,7 @@ import {ShowUser} from "./component/ShowUser";
 import {View} from "./component/View";
 import {Array} from "./component/Array";
 import {AddMinusView} from "./component/AddMinusView";
+import {EffectHookTask} from "./component/EffectHookTask";
 
 function App() {
 
@@ -30,7 +31,8 @@ function App() {
             {/*<br/>*/}
             {/*<Array/>*/}
             {/*<EventListener/>*/}
-            <AddMinusView/>
+            {/*<AddMinusView/>*/}
+            <EffectHookTask/>
         </div>
     )
 
