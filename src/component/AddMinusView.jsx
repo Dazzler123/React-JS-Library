@@ -2,9 +2,13 @@ import {useState} from "react";
 
 export const AddMinusView = () => {
 
+    //newvalue is the variable (first argument)
+    //setNewValue is the function which controls the newvalue variable (second argument)
+    //this is an array
+    //must give the initial state ---> useState(0)
     const [newvalue,setNewValue]= useState(0);
 
-    let count = 0;
+    // let count = 0;
 
     const handleonclickadd = () => {
         setNewValue(newvalue + 1);
@@ -13,6 +17,10 @@ export const AddMinusView = () => {
 
     const handleonclickminus = () => {
         setNewValue(newvalue - 1);
+
+        if (newvalue === 0) {
+            alert("Value is zero.");
+        }
         // count--;
     }
 
