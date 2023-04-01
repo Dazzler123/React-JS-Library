@@ -17,7 +17,7 @@ export const EffectHookTask = () => {
     }
 
     const handleonclickcomment = () => {
-        setValue("comments");
+        setValue("comments/1");
     }
 
     const handleonclickphotos = () => {
@@ -30,7 +30,8 @@ export const EffectHookTask = () => {
 
     return (
         <div>
-            <pre className="mt-5 text-center fs-1 fw-bolder">{data}</pre>
+            <p className="mt-5 text-center fs-1 fw-bolder">{data}</p>
+            {/*<img src={data} alt="dummyImage" className="img-fluid col-12"/>*/}
             <div className="d-flex btn-group col-6 justify-content-center mt-5 gap-3 mx-auto row" role="group"
                  aria-label="Default button group">
                 <button onClick={handleonclickpost} type="button" className="btn btn-primary col-2">Post</button>
