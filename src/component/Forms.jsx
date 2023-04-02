@@ -17,10 +17,10 @@ export const Forms = () => {
             formAge: age,
         }
 
-        console.log(data.formName)
-        console.log(data.formAddress)
-        console.log(data.formEmail)
-        console.log(data.formAge)
+        console.log("Name : " + data.formName)
+        console.log("Address : " + data.formAddress)
+        console.log("Email : " + data.formEmail)
+        console.log("Age : " + data.formAge)
     }
 
     return (
