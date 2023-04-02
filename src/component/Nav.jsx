@@ -1,4 +1,7 @@
+import {Link} from "react-router-dom";
+
 export const Nav = () => {
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
@@ -10,8 +13,12 @@ export const Nav = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end me-4" id="navbarNav">
-                        <button type="button" className="btn btn-primary me-3">Form</button>
-                        <button type="button" className="btn btn-secondary">Other</button>
+                        <Link to="/form">
+                            <button type="button" className="btn btn-primary me-3" >Form</button>
+                        </Link>
+                        <Link to="/other">
+                            <button type="button" className="btn btn-secondary">Other</button>
+                        </Link>
                     </div>
                 </div>
             </nav>
