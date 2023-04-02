@@ -9,6 +9,8 @@ import {Array} from "./component/Array";
 import {AddMinusView} from "./component/AddMinusView";
 import {EffectHookTask} from "./component/EffectHookTask";
 import {Routing} from "./component/Routing";
+import {ValueColorChange} from "./component/ValueColorChange";
+
 
 function App() {
 
@@ -35,7 +37,8 @@ function App() {
             {/*<AddMinusView/>*/}
             {/*<EffectHookTask/>*/}
             {/*<Forms/>*/}
-            <Routing/>
+            {/*<Routing/>*/}
+            <ValueColorChange/>
         </div>
     )
 
