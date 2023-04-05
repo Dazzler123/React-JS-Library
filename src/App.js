@@ -10,6 +10,7 @@ import {AddMinusView} from "./component/AddMinusView";
 import {EffectHookTask} from "./component/EffectHookTask";
 import {Routing} from "./component/Routing";
 import {ValueColorChange} from "./component/ValueColorChange";
+import {TailwindCSSTest} from "./component/TailwindCSSTest";
 
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
             {/*<EffectHookTask/>*/}
             {/*<Forms/>*/}
             {/*<Routing/>*/}
-            <ValueColorChange/>
+            {/*<ValueColorChange/>*/}
+            <TailwindCSSTest/>
         </div>
     )
 
