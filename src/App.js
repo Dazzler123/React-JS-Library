@@ -10,7 +10,7 @@ import {AddMinusView} from "./component/AddMinusView";
 import {EffectHookTask} from "./component/EffectHookTask";
 import {Routing} from "./component/Routing";
 import {ValueColorChange} from "./component/ValueColorChange";
-import {TailwindCSSTest} from "./component/TailwindCSSTest";
+import {TailwindCSSTest} from "./component/tailwindcss/TailwindCSSTest";
 
 
 function App() {
