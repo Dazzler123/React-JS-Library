@@ -11,6 +11,7 @@ import {EffectHookTask} from "./component/EffectHookTask";
 import {Routing} from "./component/Routing";
 import {ValueColorChange} from "./component/ValueColorChange";
 import {TailwindCSSTest} from "./component/tailwindcss/TailwindCSSTest";
+import {RoutingWithReactBootstrap} from "./component/RoutingWithReactBootstrap";
 
 
 function App() {
@@ -40,7 +41,8 @@ function App() {
             {/*<Forms/>*/}
             {/*<Routing/>*/}
             {/*<ValueColorChange/>*/}
-            <TailwindCSSTest/>
+            {/*<TailwindCSSTest/>*/}
+            <RoutingWithReactBootstrap/>
         </div>
     )
 
