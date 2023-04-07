@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {Button} from "react-bootstrap";
 
 export const RoutingWithReactBootstrap = () => {
     return (
@@ -22,6 +23,7 @@ export const RoutingWithReactBootstrap = () => {
                     <Nav.Link to="/form">Form</Nav.Link>
                     <Nav.Link to="/other">Other</Nav.Link>
                 </Nav>
+                <Button variant="outline-success" className="font-monospace">L O G I N</Button>{' '}
             </Container>
         </Navbar>
     );
