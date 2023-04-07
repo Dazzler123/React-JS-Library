@@ -8,10 +8,10 @@ export const RoutingWithReactBootstrap = () => {
             <Container>
                 <Navbar.Brand href="#home"><img
                     alt=""
-                    src="./tailwindcss/logo.svg"
-                    width="30"
+                    src="/logo192.png"
+                    width="31"
                     height="30"
-                    className="d-inline-block align-top"
+                    className="d-inline-block align-top me-1"
                 />{' '}
                     React Bootstrap</Navbar.Brand>
                 <Nav className="me-auto">
