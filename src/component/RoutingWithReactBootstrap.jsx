@@ -5,8 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 export const RoutingWithReactBootstrap = () => {
     return (
         <Navbar bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand href="#home"><img
+            <Container className="">
+                <Navbar.Brand className="me-4"><img
                     alt=""
                     src="/logo192.png"
                     width="31"
@@ -15,9 +15,12 @@ export const RoutingWithReactBootstrap = () => {
                 />{' '}
                     React Bootstrap</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    {/*<Nav.Item>*/}
+                    {/*    <Nav.Link to="/form">Form</Nav.Link>*/}
+                    {/*</Nav.Item>*/}
+
+                    <Nav.Link to="/form">Form</Nav.Link>
+                    <Nav.Link to="/other">Other</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
