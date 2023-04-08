@@ -12,6 +12,7 @@ import {Routing} from "./component/Routing";
 import {ValueColorChange} from "./component/ValueColorChange";
 import {TailwindCSSTest} from "./component/tailwindcss/TailwindCSSTest";
 import {RoutingWithReactBootstrap} from "./component/RoutingWithReactBootstrap";
+import {Parent} from "./component/data_communication/Parent";
 
 
 function App() {
@@ -39,10 +40,11 @@ function App() {
             {/*<AddMinusView/>*/}
             {/*<EffectHookTask/>*/}
             {/*<Forms/>*/}
-            <Routing/>
+            {/*<Routing/>*/}
             {/*<ValueColorChange/>*/}
             {/*<TailwindCSSTest/>*/}
             {/*<RoutingWithReactBootstrap/>*/}
+            <Parent/>
         </div>
     )
 
