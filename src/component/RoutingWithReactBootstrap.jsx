@@ -7,7 +7,7 @@ export const RoutingWithReactBootstrap = () => {
 
     return (
         <Navbar bg="dark" variant="dark">
-            <Container className="">
+            <Container>
                 <Navbar.Brand className="me-4"><img
                     alt=""
                     src="/logo192.png"
