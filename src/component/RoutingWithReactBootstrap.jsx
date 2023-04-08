@@ -24,6 +24,14 @@ export const RoutingWithReactBootstrap = () => {
                     <Nav.Link to="/other">Other</Nav.Link>
                 </Nav>
                 <Button variant="outline-success" className="font-monospace">L O G I N</Button>{' '}
+                {/*user pic icon*/}
+                <img
+                    alt=""
+                    src="/favicon.ico"
+                    width="31"
+                    height="30"
+                    className="d-inline-block align-top ms-5"
+                />{' '}
             </Container>
         </Navbar>
     );
