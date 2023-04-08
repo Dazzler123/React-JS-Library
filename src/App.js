@@ -39,10 +39,10 @@ function App() {
             {/*<AddMinusView/>*/}
             {/*<EffectHookTask/>*/}
             {/*<Forms/>*/}
-            {/*<Routing/>*/}
+            <Routing/>
             {/*<ValueColorChange/>*/}
             {/*<TailwindCSSTest/>*/}
-            <RoutingWithReactBootstrap/>
+            {/*<RoutingWithReactBootstrap/>*/}
         </div>
     )
 
