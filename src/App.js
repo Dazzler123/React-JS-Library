@@ -13,6 +13,7 @@ import {ValueColorChange} from "./component/ValueColorChange";
 import {TailwindCSSTest} from "./component/tailwindcss/TailwindCSSTest";
 import {RoutingWithReactBootstrap} from "./component/RoutingWithReactBootstrap";
 import {Parent} from "./component/data_communication/Parent";
+import {MUIForm} from "./component/mui/MUIForm";
 
 
 function App() {
@@ -44,7 +45,8 @@ function App() {
             {/*<ValueColorChange/>*/}
             {/*<TailwindCSSTest/>*/}
             {/*<RoutingWithReactBootstrap/>*/}
-            <Parent/>
+            {/*<Parent/>*/}
+            <MUIForm/>
         </div>
     )
 
