@@ -1,6 +1,32 @@
 import {Grid, TextField, Typography} from "@mui/material";
+import Swal from "sweetalert2";
 
 export const MUIForm = () => {
+
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    function showAlert() {
+        Toast.fire({
+            icon: 'success',
+            title: 'Signed in successfully'
+        })
+
+        Swal.fire(
+            'The Internet?',
+            'That thing is still around?',
+            'success'
+        )
+    }
 
     return (
         <>
@@ -44,7 +70,7 @@ export const MUIForm = () => {
                 </div>
             </div>
             <div className="col-8 mx-auto mt-5">
-                <button type="button"
+                <button type="button" onClick={showAlert}
                         className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300
                          font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700
                           focus:outline-none dark:focus:ring-blue-800 col-12">Save
