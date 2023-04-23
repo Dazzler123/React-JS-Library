@@ -16,6 +16,7 @@ import {Parent} from "./component/data_communication/Parent";
 import {MUIForm} from "./component/mui/MUIForm";
 import { UseRef } from './component/use_ref_hook/UseRef';
 import { ClickedCount } from './component/use_ref_hook/ClickedCount';
+import { StopWatch } from './component/use_ref_hook/StopWatch';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
             {/*<TailwindCSSTest/>*/}
             {/*<RoutingWithReactBootstrap/>*/}
             {/*<Parent/>*/}
-            <ClickedCount/>
+            <StopWatch/>
         </div>
     )
 
