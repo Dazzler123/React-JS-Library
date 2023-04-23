@@ -14,6 +14,7 @@ import {TailwindCSSTest} from "./component/tailwindcss/TailwindCSSTest";
 import {RoutingWithReactBootstrap} from "./component/RoutingWithReactBootstrap";
 import {Parent} from "./component/data_communication/Parent";
 import {MUIForm} from "./component/mui/MUIForm";
+import { UseRef } from './component/use_ref_hook/UseRef';
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
             {/*<TailwindCSSTest/>*/}
             {/*<RoutingWithReactBootstrap/>*/}
             {/*<Parent/>*/}
-            <MUIForm/>
+            <UseRef/>
         </div>
     )
 
