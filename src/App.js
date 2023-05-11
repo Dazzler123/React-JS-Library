@@ -49,7 +49,7 @@ function App() {
             {/*<TailwindCSSTest/>*/}
             {/*<RoutingWithReactBootstrap/>*/}
             {/*<Parent/>*/}
-            <StopWatch/>
+            <UseRef/>
         </div>
     )
 
